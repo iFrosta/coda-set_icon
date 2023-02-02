@@ -1,0 +1,29 @@
+{
+    "name": "coda - set icon",
+    "description": "",
+    "author": "ifrosta",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": {
+        "128": "assets/icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.coda.io/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_icons": {
+            "128": "assets/icons/icon.png"
+        }
+    },
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ]
+}
